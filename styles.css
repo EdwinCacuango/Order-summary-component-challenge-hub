@@ -1,0 +1,156 @@
+html {
+  font-size: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  /* Fonnts */
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+
+  /* Background */
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+h1{
+  font-size:2rem;
+}
+p{
+    color:hsl(224, 23%, 55%)
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin-top:6.375rem;
+  margin-bottom:6.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 28.125rem;
+  height: 694px;
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.hero img{
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+   border-radius: 10px 10px 0 0;
+    max-width: 100%;
+}
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right:3rem ;
+}
+
+.text{
+  text-align: center;
+}
+.price-box {
+  /* Dimensiones */
+  width: 22.125rem;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  /* Centrado */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Estilos adicionales */
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1rem;
+
+}
+.price-box a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    text-decoration: underline;
+  }
+.price-box a:hover{
+  text-decoration: none;
+}
+  
+.inf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5625rem;
+}
+
+
+.btn{
+    width: 22.125rem;
+    padding: 1.1875rem;
+    text-align: center;
+    align-items: center;
+
+    background-color: hsl(245, 75%, 52%);
+
+    color:white;
+    font-weight: bolder;
+
+    border-radius: 1rem;
+    margin:0.5rem;
+}
+
+.primary:hover{
+  background-color: hsl(225, 100%, 94%);
+  color: black;
+}
+.secondary{
+    background-color:white;
+    color: hsl(224, 23%, 55%);
+}
+
+.secondary:hover{
+  color: black;
+}
+
+@media (max-width:375px) {
+  body{
+    font-size: 12px;
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  .container{
+    margin-top: 4.3125rem;
+    margin-bottom: 4.3125rem;
+    margin-right: 1.4375rem;
+    margin-left: 1.4375rem;
+  }
+  .card{
+    width: 20.375rem;
+    max-height: 35.3125rem; 
+  }
+  .text-section{
+    padding: 1.5625rem;
+  }
+  .price-box{
+    width: 17.0625rem;
+    padding: 1rem;
+  }
+  .btn{
+    width: 17.0625rem;
+    margin:0.25rem;
+  }
+}
