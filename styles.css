@@ -133,24 +133,24 @@ p{
     font-size: 1.5rem;
   }
   .container{
-    margin-top: 4.3125rem;
-    margin-bottom: 4.3125rem;
+    margin-top: 3.3125rem;
+    margin-bottom: 3.3125rem;
     margin-right: 1.4375rem;
     margin-left: 1.4375rem;
   }
   .card{
-    width: 20.375rem;
-    max-height: 35.3125rem; 
+    width: 18.375rem;
+    max-height: 32.3125rem; 
   }
   .text-section{
     padding: 1.5625rem;
   }
   .price-box{
-    width: 17.0625rem;
+    width: 15.0625rem;
     padding: 1rem;
   }
   .btn{
-    width: 17.0625rem;
+    width: 15.0625rem;
     margin:0.25rem;
   }
 }
