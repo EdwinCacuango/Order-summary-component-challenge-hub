@@ -124,7 +124,7 @@ p{
   color: black;
 }
 
-@media (max-width:375px) {
+@media (max-width:900px) {
   body{
     font-size: 12px;
     background-image: url(/images/pattern-background-mobile.svg);
